@@ -4,7 +4,7 @@ Simple HTML Build with Gulp Tasks
 This template contains sample routines to build a simple app. It uses [Nunjucks](https://mozilla.github.io/nunjucks/)
  templates from Mozilla and Sass.
   
-## Includes Packages & Related Tasks
+## Included Packages & Related Tasks
 
 ### Connect
 Connect server with livereload
