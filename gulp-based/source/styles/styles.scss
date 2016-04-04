@@ -1,0 +1,53 @@
+/*! @author Bilal Cinarli */
+
+/** -------------------------------------------
+    Project Styles
+    ------------------------------------------- **/
+/**
+ * First Import Settings
+ * These settings are defines simple color and sizes for Melange defaults
+ * Also some settings such as `$support-for-ie8` etc. are used in Caffeine mixins
+ * You are free to extend the settings for system wide use.
+ */
+@import "settings/settings";
+
+
+/**
+ * Second Import Caffeine
+ * Caffeine is a Sass based mixin/function library (see: https://github.com/bcinarli/caffeine)
+ * Mostly Melange is not depended on Caffeine.
+ */
+@import "../../bower_components/caffeine/lib/caffeine";
+
+
+/**
+ * Third Import Melange Core
+ * Melange Core is a super set of normalize library.
+ * It has general definitions of certain elements such as labels, form fields, buttons, media object without
+ * any predefined templates. Main purpose of the Melange is never overwrite any framework definitions
+ * during coding. Every definition, class names can change via settings and merges itself with your GUI.
+ * Also, Melange has two sets for width definitions.
+ * One is a simple grid system with gutter added between columns as paddings. Using a padding gutter and box-sizing: border-box
+ * definition, adds more control over responsive designs. These columns floated by default and support up to 18-column grids.
+ * This grid system is a fluid grid. You need to add breakpoint definitions for responsive designs.
+ * Other width types are fragmented widths such as .one-half, .two-thirds, .three-quarters etc. These are defined by percentages and
+ * missing the 100% fragment except in .one-whole definitions. Simply, there are no .two-halves, .three-thirds, .four-quarters classes
+ * which are equal to .one-whole :)
+ */
+@import "../../bower_components/melange/lib/melange";
+
+
+/**
+ * GUI Styles
+ * Your gui related definitions.
+ * Only add the main GUI file in the styles.scss. Other gui styles will be added in gui/gui.scss
+ */
+@import "gui/gui";
+
+
+/**
+ * Lastly, import Melange Auxiliary
+ * For auxiliary usages, the final visibility or behaviour states of the elements, add the auxiliary definitions at last.
+ * The auxiliary definitions are such as `.is-hidden`, `.has-action`
+ */
+@import "../../bower_components/melange/lib/melange/auxiliary/auxiliary";

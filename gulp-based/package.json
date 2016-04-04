@@ -1,0 +1,45 @@
+{
+  "name": "gulp-based-tasks",
+  "version": "0.1.0",
+  "description": "Simple HTML build with Gulp based tasks",
+  "main": "app/index.html",
+  "scripts": {
+    "dev": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bcinarli/project-templates.git"
+  },
+  "author": "Bilal Cinarli <bcinarli@gmail.com>",
+  "contributors": [],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bcinarli/project-templates/issues"
+  },
+  "homepage": "https://github.com/bcinarli/project-templates/gulp-based",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-concat": "latest",
+    "gulp-connect": "latest",
+    "gulp-consolidate": "latest",
+    "gulp-csslint": "latest",
+    "gulp-data": "latest",
+    "gulp-header": "latest",
+    "gulp-iconfont": "latest",
+    "gulp-imagemin": "latest",
+    "gulp-jshint": "^2.0.0",
+    "gulp-load-plugins": "^1.2.0",
+    "gulp-notify": "latest",
+    "gulp-nunjucks-render": "latest",
+    "gulp-rename": "latest",
+    "gulp-sass": "latest",
+    "gulp-sass-lint": "^1.1.1",
+    "gulp-sourcemaps": "latest",
+    "gulp-uglify": "latest",
+    "jshint": "^2.9.1",
+    "load-data": "latest",
+    "load-gulp-tasks": "^0.1.0",
+    "lodash":"^4.7.0"
+  },
+  "preferGlobal": true
+}

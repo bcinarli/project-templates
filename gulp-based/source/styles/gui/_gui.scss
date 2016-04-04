@@ -1,0 +1,49 @@
+/* @author Bilal Cinarli */
+
+/** -------------------------------------------
+    GUI Related Styles
+    ------------------------------------------- **/
+/**
+  * GUI Definitions
+  * Only import the directories main files. No need the add other partials. In import order, each categorized partial
+  * imported in the main file of the category
+  */
+
+/**
+ * Externals
+ */
+@import "externals/externals";
+
+
+/**
+ * Layout
+ * In layout component, there lays the general position of the main elements like page-wrap, header, footer, content etc.
+ * Keep in mind, the layout components should only contain the position or size of these wrappers
+ * the other elements  like logo in the header, menu in the footer should defined in the components or particules or other
+ * appropriate folder to their definitions fit in.
+ */
+@import "layout/layout";
+
+
+/**
+ * Elements
+ */
+@import "elements/elements";
+
+
+/**
+ * Particules
+ */
+@import "particules/particules";
+
+
+/**
+ * Components
+ */
+@import "components/components";
+
+
+/**
+ * Auxiliary
+ */
+@import "auxiliary/auxiliary";

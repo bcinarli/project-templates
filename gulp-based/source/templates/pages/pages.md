@@ -1,0 +1,2 @@
+# Pages
+Your page templates
