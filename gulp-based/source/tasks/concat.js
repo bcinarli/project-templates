@@ -12,7 +12,7 @@ var concat = function(gulp, options, plugins) {
             .pipe(gulp.dest(options.config.paths.scripts));
     });
 
-    gulp.task('concat:app', function() {
+    gulp.task('concat:app', ['lint:js'], function() {
         return gulp.src(options.config.scripts)
             .pipe(plugins.sourcemaps.init())
             .pipe(plugins.concat(options.pkg.name + '.js')).on('error', plugins.notify.onError('Error: <%= error.message %>'))

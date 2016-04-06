@@ -3,34 +3,46 @@
 /** -------------------------------------------
     Icons Extend
     ------------------------------------------- **/
-i[class*="icon-"] {
+[class*="icon-"] {
     display: inline-block;
-    font-size: 1em;
+	font-size: 1rem;
     line-height: 1;
     vertical-align: middle;
 }
 
 // Icon sizes
 .icon-05x {
-    font-size: .5em;
+    font-size: .5rem;
 }
 
 .icon-075x {
-    font-size: .75em;
+    font-size: .75rem;
 }
 
-.icon-1_5x {
-    font-size: 1.5em;
+.icon-1--5x {
+    font-size: 1.5rem;
 }
 
 .icon-2x {
-    font-size: 2em;
+    font-size: 2rem;
 }
 
 .icon-3x {
-    font-size: 3em;
+    font-size: 3rem;
 }
 
 .icon-4x {
-    font-size: 4em;
+    font-size: 4rem;
+}
+
+.icon-5x {
+    font-size: 5rem;
+}
+
+.icon-6x {
+    font-size: 6rem;
+}
+
+.icon-7x {
+    font-size: 7rem;
 }

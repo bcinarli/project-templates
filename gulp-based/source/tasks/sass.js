@@ -3,7 +3,7 @@
  */
 
 var sass = function(gulp, options, plugins) {
-    gulp.task('styles', function() {
+    gulp.task('styles', ['lint:scss'], function() {
         return gulp.src(options.config.paths.scss + '**/*.scss')
             .pipe(plugins.sass({
                 outputStyle: 'expanded'

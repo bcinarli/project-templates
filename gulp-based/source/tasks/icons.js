@@ -9,7 +9,7 @@ var icons = function(gulp, options, plugins) {
         return gulp.src(options.config.paths.svg + '**/*.svg')
             .pipe(plugins.iconfont({
                 fontName:      options.pkg.name,
-                appendUnicode: true,
+                prependUnicode: true,
                 formats:       ['ttf', 'eot', 'woff'],
                 timestamp:     runTimestamp
             })).on('glyphs', function(glyphs) {
