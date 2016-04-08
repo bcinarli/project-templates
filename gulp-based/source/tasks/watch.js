@@ -14,7 +14,7 @@ var watch = function(gulp, options, plugins) {
         // --------------------------
         // watch:sass
         // --------------------------
-        gulp.watch(options.config.paths.scss + '**/*.scss', [reload:styles']);
+        gulp.watch(options.config.paths.scss + '**/*.scss', ['reload:styles']);
 
         // --------------------------
         // watch:scripts
