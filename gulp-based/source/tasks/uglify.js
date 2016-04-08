@@ -3,7 +3,7 @@
  */
 
 var uglify = function(gulp, options, plugins) {
-    gulp.task('uglify:lib', function() {
+    gulp.task('uglify:lib', ['concat:lib'], function() {
         return gulp.src(options.config.paths.scripts + options.pkg.name + '.lib.js')
             .pipe(plugins.rename(options.pkg.name + '.lib.min.js'))
             .pipe(plugins.uglify()).on('error', plugins.notify.onError('Error: <%= error.message %>'))
@@ -12,7 +12,7 @@ var uglify = function(gulp, options, plugins) {
             .pipe(gulp.dest(options.config.paths.scripts));
     });
 
-    gulp.task('uglify:app', function() {
+    gulp.task('uglify:app', ['concat:app'], function() {
         return gulp.src(options.config.paths.scripts + options.pkg.name + '.js')
             .pipe(plugins.rename(options.pkg.name + '.min.js'))
             .pipe(plugins.uglify()).on('error', plugins.notify.onError('Error: <%= error.message %>'))
