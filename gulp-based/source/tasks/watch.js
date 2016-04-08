@@ -14,12 +14,12 @@ var watch = function(gulp, options, plugins) {
         // --------------------------
         // watch:sass
         // --------------------------
-        gulp.watch(options.config.paths.scss + '**/*.scss', ['styles', 'reload:styles']);
+        gulp.watch(options.config.paths.scss + '**/*.scss', [reload:styles']);
 
         // --------------------------
         // watch:scripts
         // --------------------------
-        gulp.watch([options.config.paths.js + '**/*.js'], ['scripts', 'reload:scripts']);
+        gulp.watch([options.config.paths.js + '**/*.js'], ['reload:scripts']);
 
         // --------------------------
         // watch:icons
