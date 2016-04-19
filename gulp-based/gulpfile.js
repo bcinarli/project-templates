@@ -7,8 +7,8 @@
 var gulp         = require('gulp'),
     extend       = require('util')._extend,
     pkg          = require('./package.json'),
-    config       = require('./rocket-engine/config'),
-    options      = {pattern: ['./rocket-engine/tasks/**/*.js']};
+    config       = require('./source/config'),
+    options      = {pattern: ['./source/tasks/**/*.js']};
 
 options = extend(options, {pkg: pkg, config: config});
 
