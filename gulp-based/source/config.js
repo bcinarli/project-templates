@@ -20,6 +20,10 @@
         data:    'source/data/'
     };
 
+    config.namespace = {
+        templates : 'Rocket.templates'
+    }
+
     config.banner = [
         '/*! <%= pkg.name %> \n' +
         ' *  <%= pkg.description %> \n' +
