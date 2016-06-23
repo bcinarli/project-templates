@@ -1,0 +1,22 @@
+{
+  "name": "grunt-based-tasks",
+  "description": "Simple HTML build with Grunt based tasks",
+  "main": "app/index.html",
+  "authors": [
+    "Bilal Cinarli"
+  ],
+  "license": "MIT",
+  "moduleType": [],
+  "homepage": "https://github.com/bcinarli/project-templates/grunt-based",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "caffeine": "^0.6.0",
+    "melange": "^0.6.1"
+  }
+}
