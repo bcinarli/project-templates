@@ -1,0 +1,19 @@
+# Rules Configuration
+rules:
+  # Disallows
+  no-css-comments: 0
+
+  # Style
+  indentation:
+    - 4
+    -
+      size: 4
+  hex-notation:
+    -
+      style: lowercase
+  quotes:
+    -
+      style: double
+
+  # Final Items
+  final-newline: 0
