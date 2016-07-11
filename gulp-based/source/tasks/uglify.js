@@ -22,6 +22,7 @@ var uglify = function(gulp, options, plugins) {
     });
 
     gulp.task('uglify:all', ['uglify:lib', 'uglify:app']);
+    gulp.task('scripts', ['uglify:all']);
 };
 
 module.exports = uglify;
