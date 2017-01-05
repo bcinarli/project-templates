@@ -1,0 +1,36 @@
+/* @author Bilal Cinarli */
+/** -------------------------------------------
+    Size Definitions
+    ------------------------------------------- **/
+/**
+ * Spacing in element
+ *
+ * Sets the padding sizes for an element
+ * @default $base-spacing 1em
+ * @default $base-input-spacing 5px
+ */
+$base-spacing: null;
+$base-input-spacing: null;
+
+/**
+ * Grid gutter and columns
+ *
+ * Defines the grid gutter size and column count in a row
+ * Grid columns floated by default. But it is optional whether float or not
+ * for percentage widths.
+ * @default $base-gutter: 20px
+ * @default $base-grid-columns: 18
+ * @default $base-float-widths: true
+ */
+
+$base-gutter: null;
+$base-grid-columns: 12;
+$base-float-widths: false;
+
+/**
+ * Border Widths
+ *
+ * Applied border with for input fields and table borders
+ * @default $base-border-width: 1px;
+ */
+$base-border-width: null;

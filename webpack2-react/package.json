@@ -1,0 +1,57 @@
+{
+  "name": "webpack2-react",
+  "version": "0.1.0",
+  "description": "Simple HTML build with Webpack2 & React",
+  "main": "app/index.html",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bcinarli/project-templates.git"
+  },
+  "author": "Bilal Cinarli <bcinarli@gmail.com>",
+  "contributors": [],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bcinarli/project-templates/issues"
+  },
+  "homepage": "https://github.com/bcinarli/project-templates/webpack2-react",
+  "preferGlobal": true,
+  "scripts": {
+    "start": "nodemon --watch webpack.config.js --exec \"webpack-dev-server --progress --colors --inline --env development\"",
+    "build:dev": "webpack --config webpack.config.js --progress --colors",
+    "build:prod": "webpack --config webpack.production.config.js --progress --colors",
+    "lint:styles": "stylelint './source/styles/**/*.scss' --syntax scss",
+    "lint:scripts": "eslint --env browser ./source/script/**"
+  },
+  "dependencies": {
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1",
+    "react-redux": "^5.0.1",
+    "react-router": "^3.0.0",
+    "redux": "^3.6.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.2.10",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "css-loader": "^0.26.1",
+    "eslint": "^3.12.2",
+    "eslint-loader": "^1.6.1",
+    "extract-text-webpack-plugin": "^2.0.0-beta.4",
+    "file-loader": "github:webpack/file-loader",
+    "html-loader": "^0.4.4",
+    "html-webpack-plugin": "^2.26.0",
+    "image-webpack-loader": "^3.1.0",
+    "node-sass": "^4.1.1",
+    "nodemon": "^1.11.0",
+    "react-hot-loader": "^3.0.0-beta.6",
+    "redbox-react": "^1.3.3",
+    "resolve-url-loader": "^1.6.1",
+    "sass-loader": "^4.1.1",
+    "stylelint-webpack-plugin": "^0.4.2",
+    "url-loader": "^0.5.7",
+    "webpack": "^2.2.0-rc.3",
+    "webpack-dev-server": "^2.2.0-rc.0"
+  }
+}

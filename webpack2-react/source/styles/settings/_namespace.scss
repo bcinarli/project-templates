@@ -1,0 +1,44 @@
+/* @author Bilal Cinarli */
+
+/** -------------------------------------------
+    Default class/definition names
+    ------------------------------------------- **/
+/**
+ * Name space prefix
+ * Adds a defined namespace prefix to generated class names
+ */
+$namespace: null;
+
+/**
+ * Class names for grid
+ * @default $row-name: 'row'
+ * @default $column-name: 'column'
+ * @default $column-name-plural: 'columns'
+ */
+$row-name: null;
+$column-name: null;
+$column-name-plural: null;
+
+/**
+ * Button names for action
+ *
+ * @default $action-button: '-action'; // only used for similar class selector
+ * @default $primary-button: 'primary-action';
+ * @default $secondary-button: 'secondary-action';
+ * @default $tertiary-button: 'tertiary-action';
+ * @default $cancel-button: 'cancel-action';
+ */
+$action-button: null; // only used for similar class selector
+$primary-button: null;
+$secondary-button: null;
+$tertiary-button: null;
+$cancel-button: null;
+
+/**
+ * Folders
+ * Not actually a namespace but folder names also have different preferences
+ * @default $images: '../images/'; relative to styles folder
+ * @default $retina-suffix: '@2x'
+ */
+$images: null;
+$retina-suffix: null;
