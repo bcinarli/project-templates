@@ -52,8 +52,7 @@ const devConfig = {
         publicPath:         config.paths.public,
         contentBase:        config.paths.content,
         hot:                true,
-        historyApiFallback: true,
-        quiet:              true
+        historyApiFallback: true
     },
     plugins:     [
         new HtmlWebpackPlugin({
