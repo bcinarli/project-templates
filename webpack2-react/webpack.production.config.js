@@ -12,12 +12,7 @@ let StyleLintPlugin = require('stylelint-webpack-plugin');
 const prodConfig = {
     context: config.source,
     entry:   {
-        'js':  [
-            'react-hot-loader/patch',
-            'webpack-dev-server/client?http://localhost:8080/',
-            'webpack/hot/only-dev-server',
-            './scripts/index.js'
-        ],
+        'js':  ['./scripts/index.js'],
         'lib': config.libs
     },
     output:  {
