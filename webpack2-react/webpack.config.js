@@ -28,12 +28,10 @@ const devConfig = {
     module:      {
         rules: [
             config.rules.html,
-            config.rules.fontUrl,
-            config.rules.fontFile,
-            config.rules.images,
+            config.rules.inlineFont,
             config.rules.eslint,
             config.rules.babel,
-            config.rules.extract
+            config.rules.sass
         ]
     },
     resolve:     {
@@ -59,7 +57,6 @@ const devConfig = {
             template: config.source + '/templates/static/index.tpl'
         }),
         new StyleLintPlugin(),
-        config.extractCSS,
         new webpack.DefinePlugin({
             '__DEV__':     true,
             'process.env': {
