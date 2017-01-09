@@ -45,7 +45,11 @@ Object.keys(pkg.dependencies).forEach(item => {
 config.extractCSS = new ExtractTextPlugin(config.filenames.css);
 
 config.rules = {
-    fontUrl:  {
+    inlineFont: {
+        test:   /\.(gif|png|jpe?g|svg|woff(2)?|eot|ttf)(\?[a-z0-9=.]+)?$/,
+        loader: 'url-loader?limit=100000'
+    },
+    fontUrl:    {
         test:    /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
         loader:  'url-loader',
         options: {
@@ -56,7 +60,7 @@ config.rules = {
             publicPath: config.relativePaths.fonts
         }
     },
-    fontFile: {
+    fontFile:   {
         test:    /\.ttf$|\.eot$/,
         loader:  'file-loader',
         options: {
@@ -65,7 +69,7 @@ config.rules = {
             publicPath: config.relativePaths.fonts
         }
     },
-    images:   {
+    images:     {
         test: /.*\.(gif|png|jpe?g|svg)$/i,
         use:  [
             {
@@ -90,23 +94,32 @@ config.rules = {
             }
         ]
     },
-    html:     {
+    html:       {
         test:    /\.tpl?$/i,
         loader:  'html-loader',
         options: {
             attrs: ["img:src", "link:href"]
         }
     },
-    eslint:   {
+    eslint:     {
         test:    /\.(js|jsx)?$/i,
         enforce: 'pre',
         loader:  'eslint-loader'
     },
-    babel:    {
+    babel:      {
         test:   /\.(js|jsx)?$/i,
         loader: 'babel-loader'
     },
-    extract:  {
+    sass:       {
+        test:    /\.scss?$/i,
+        loaders: [
+            'style-loader',
+            {loader: 'css-loader', query: {sourceMap: true}},
+            {loader: 'resolve-url-loader', query: {keepQuery: true}},
+            {loader: 'sass-loader', query: {sourceMap: true}}
+        ]
+    },
+    extract:    {
         test:   /\.scss?$/i,
         loader: config.extractCSS.extract({
             loader: [
