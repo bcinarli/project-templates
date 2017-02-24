@@ -1,4 +1,7 @@
 {
+  "plugins": [
+    "stylelint-order"
+  ],
   "rules": {
     "color-no-invalid-hex": true,
     "color-hex-case": "lower",
@@ -19,9 +22,8 @@
       }
     ],
     "declaration-block-no-duplicate-properties": true,
-    "declaration-block-no-ignored-properties": true,
     "declaration-block-no-redundant-longhand-properties": true,
-    "declaration-block-properties-order": [
+    "order/declaration-block-properties-specified-order": [
       "display",
       "position",
       "top",
