@@ -23,7 +23,7 @@
     "gulp-connect": "latest",
     "gulp-consolidate": "latest",
     "gulp-data": "latest",
-	"gulp-eslint": "latest",
+    "gulp-eslint": "latest",
     "gulp-header": "latest",
     "gulp-iconfont": "latest",
     "gulp-imagemin": "latest",
@@ -38,9 +38,9 @@
     "gulp-handlebars": "latest",
     "gulp-declare": "latest",
     "gulp-wrap": "latest",
-    "jshint": "^2.9.1",
     "load-data": "latest",
     "load-gulp-tasks": "^0.1.0",
+    "stylelint-order": "^0.3.0",
     "lodash":"^4.7.0"
   },
   "preferGlobal": true
