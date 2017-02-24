@@ -33,7 +33,7 @@
     "gulp-rename": "latest",
     "gulp-sass": "latest",
     "gulp-sourcemaps": "latest",
-	"gulp-stylelint": "latest"
+    "gulp-stylelint": "latest",
     "gulp-uglify": "latest",
     "gulp-handlebars": "latest",
     "gulp-declare": "latest",
