@@ -40,8 +40,8 @@
     "gulp-wrap": "latest",
     "load-data": "latest",
     "load-gulp-tasks": "^0.1.0",
+    "lodash":"^4.7.0",
     "stylelint-order": "^0.3.0",
-    "lodash":"^4.7.0"
   },
   "preferGlobal": true
 }

@@ -7,7 +7,7 @@
   ],
   "license": "MIT",
   "moduleType": [],
-  "homepage": "https://github.com/bcinarli/project-templates/gulp-based",
+  "homepage": "https://github.com/bcinarli/project-templates/grunt-based",
   "ignore": [
     "**/.*",
     "node_modules",
